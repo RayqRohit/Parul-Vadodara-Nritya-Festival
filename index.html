@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Vadodara Rashtriya Natya Mahotsav</title>
+
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/custom/css/styles.css">
+    <link rel="stylesheet" href="./assets/custom/css/media.css">
+</head>
+
+
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top shadow py-2 navbar-dark ">
+
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <img src="./assets/images/parul-logo.png" alt="Parul University Logo" width="230" height="60"
+                    style="object-fit: contain;">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse py-2" id="mainNavbar">
+                <ul
+                    class="navbar-nav gap-3 gap-lg-2 w-100 justify-content-center justify-content-lg-end text-center text-lg-end">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/PIPA.html">About PIPA</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/aboutFestival.html">About Festival</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/schedule.html">Schedule</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/aboutPlays.html">About the Plays</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/queries.html">Queries</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- video section -->
+    <section class="video-banner">
+        <video src="./assets/videos/Video_Intro_Creation_Natya_Mahotsav_.mp4" autoplay loop muted playsinline
+            class="video-bg"></video>
+    </section>
+
+    <!-- countdown section -->
+
+    <section class="countdown-section text-center py-5" id="festival-countdown-section">
+        <h2 class="countdown-heading mb-4 py-2">
+            <span class="countdown-icon">⏳</span>
+            Time Left for Festival
+        </h2>
+        <div id="festival-countdown" class="countdown-timer"></div>
+    </section>
+
+
+    <!-- about parul universtiy -->
+
+    <section class="about-section py-5" id="about-pipa">
+        <div class="container">
+            <div class="row align-items-center g-5 parul-university-row d-flex mx-auto align-self-center ">
+                <!-- Text Column -->
+                <div class="col-lg-7 about-parul-text">
+                    <h2 class="about-heading mb-4">About Parul University</h2>
+                    <p class="about-lead mb-2 text-lg-start text-center">
+                        Parul University is a leading multidisciplinary institution based in Vadodara, Gujarat, known
+                        for its commitment to quality education and innovation. Proudly recognized as India’s youngest
+                        private university to receive NAAC A++ accreditation in its first cycle, the university blends
+                        rich cultural heritage with modern academic practices to enrich student experiences and drive
+                        national and global development.
+
+                        Home to over 60,000 students from across India and 4,000 international students from 75+
+                        countries, Parul University offers a wide range of diploma, undergraduate, postgraduate, and
+                        doctoral programs. Its industry-oriented courses, strong startup incubation, and excellent
+                        placement record help students launch successful careers.
+
+                        The university holds memberships in esteemed global bodies and has received numerous accolades,
+                        including DSIR recognition for research, NABL and NABH accreditations, a Top 50 ARIIA ranking
+                        for innovation, and titles such as Best Private University in Western India and Best University
+                        in Placements.
+                    </p>
+                </div>
+                <!-- Image Column -->
+                <div class="col-lg-5 text-center about-parul-image">
+                    <img src="https://placehold.co/800x500?text=Parul University" alt="About Parul University"
+                        class="img-fluid rounded-4 about-img shadow" style="max-height:380px; object-fit:cover;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- about gujarat color festival -->
+
+    <section class="about-festival-section py-5" id="about-festival">
+        <div class="container">
+            <div
+                class="row align-items-center g-5 flex-column-reverse flex-lg-row about-festival-section-row d-flex mx-auto align-self-center">
+                <!-- Bento Grid Images (left on desktop, bottom on mobile) -->
+                <div class="col-12 col-lg-6 mb-4 mb-lg-0 about-festival-row">
+                    <!-- Desktop Grid: show only on lg+ -->
+                    <div class="bento-grid d-none d-lg-grid">
+                        <div class="bento-item bento-1">
+                            <img src="https://placehold.co/400x500" alt="Live Theatre 1"
+                                class="img-fluid rounded-4 shadow">
+                        </div>
+                        <div class="bento-item bento-2">
+                            <img src="https://placehold.co/800x500" alt="Live Theatre 2"
+                                class="img-fluid rounded-4 shadow">
+                        </div>
+                        <div class="bento-item bento-3">
+                            <img src="https://placehold.co/800x500" alt="Live Theatre 3"
+                                class="img-fluid rounded-4 shadow">
+                        </div>
+                        <div class="bento-item bento-4">
+                            <img src="https://placehold.co/800x500" alt="Live Theatre 4"
+                                class="img-fluid rounded-4 shadow">
+                        </div>
+                    </div>
+                    <!-- Mobile Slider: show only on md and below -->
+                    <div id="bentoCarousel" class="carousel slide d-block d-lg-none" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://placehold.co/800x500" class="d-block w-100 rounded-4 shadow"
+                                    alt="Live Theatre 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://placehold.co/800x500" class="d-block w-100 rounded-4 shadow"
+                                    alt="Live Theatre 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://placehold.co/800x500" class="d-block w-100 rounded-4 shadow"
+                                    alt="Live Theatre 3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://placehold.co/800x500" class="d-block w-100 rounded-4 shadow"
+                                    alt="Live Theatre 4">
+                            </div>
+                        </div>
+                        <!-- Carousel Controls -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#bentoCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#bentoCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Text Column -->
+                <div class="col-12 col-lg-6 about-festival-row">
+                    <h2 class="festival-heading mb-3">About Vadodara Rashtriya Natya Mahotsav</h2>
+                    <p class="festival-lead mb-2 text-lg-start text-center">
+                        Vadodara Rashtriya Natya Mahotsav is a grand celebration of the performing arts, dedicated to
+                        honoring the
+                        vibrant traditions and evolving expressions of Indian theatre. This dynamic festival brings
+                        together
+                        artists, performers, and theatre enthusiasts from across Gujarat and the country, creating a
+                        shared space for storytelling, cultural exchange, and artistic excellence.
+                        Hosted by Parul University, the festival is a platform for traditional and contemporary forms of
+                        theatre. Scheduled for 19th to 22nd August at Parul University, Vadodara, it features
+                        performances by renowned groups, ensembles, and artists, along with celebrated figures like
+                        Rakesh Bedi, Himani Shivpuri, Saurabh Shukla, Naseeruddin Shah, and Ratna Pathak Shah.
+                        Vadodara Rashtriya Natya Mahotsav is more than just a festival—it’s a cultural movement to
+                        nurture talent,
+                        celebrate diversity, and build a thriving theatre ecosystem for the future.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- about president -->
+
+    <section class="president-desk-section py-5" id="president-desk">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <!-- President Image -->
+                <div class="col-lg-4 text-center">
+                    <div class="president-img-wrap mb-4 mb-md-0 mb-lg-4">
+                        <img src="https://placehold.co/800x500" alt="Dr. Devanshu Patel"
+                            class="president-img shadow-lg rounded-4">
+                    </div>
+                    <div class="president-name mt-3">
+                        <h4 class="mb-1 fw-bold">Dr. Devanshu Patel</h4>
+                        <div class="text-muted small">President, Parul University</div>
+                    </div>
+                </div>
+                <!-- Message Content -->
+                <div class="col-lg-8">
+                    <div class="president-message-card p-4 h-100 rounded-4 shadow-sm">
+                        <h2 class="president-heading mb-3">
+                            <span class="president-icon">📝</span>
+                            From the President's Desk
+                        </h2>
+                        <p>
+                            Parul University extends its warmest greetings to all. Gujarat, a land resounding with the
+                            vibrant essence of art and culture, continues to inspire us in our pursuit of educational
+                            and creative excellence.<br><br>
+                            In line with this vision, we are proud to present the <b>Vadodara Rashtriya Natya Mahotsav –
+                                Annual
+                                Theatre Festival</b>, a beacon of artistic inspiration and youth empowerment. Through
+                            this initiative, our commitment to fostering talent and promoting holistic development comes
+                            to life.
+                        </p>
+                        <p>
+                            At the Parul Institute of Performing Arts, we are dedicated to nurturing future leaders and
+                            cultural ambassadors. Through immersive and competitive cultural experiences, we strive to
+                            shape talents and guide our students towards remarkable achievements. This three-day
+                            cultural gala goes beyond entertainment — it ignites imagination, cultivates social
+                            awareness, and safeguards the rich artistic traditions we hold dear.
+                        </p>
+                        <p class="mb-0">
+                            We extend a heartfelt invitation to all institutions to join us in this vibrant celebration.
+                            Let your students step onto our stage—a platform where creativity meets opportunity, and
+                            where excellence is recognized and rewarded.<br><br>
+                            <b>Together, let us celebrate the spirit of culture, unity, and theater at Gujarat Rang
+                                Mahotsav.</b>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- dean message -->
+    <section class="president-desk-section py-5" id="dean-desk">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <!-- Dean Image -->
+                <div class="col-lg-4 text-center">
+                    <div class="president-img-wrap mb-4 mb-md-0 mb-lg-4">
+                        <img src="https://placehold.co/800x500" alt="Dr. Manish Jangra"
+                            class="president-img shadow-lg rounded-4">
+                    </div>
+                    <div class="president-name mt-3">
+                        <h4 class="mb-1 fw-bold">Dr. Manish Jangra</h4>
+                        <div class="text-muted small">Dean, Faculty of Performing Arts<br>Parul University</div>
+                    </div>
+                </div>
+                <!-- Message Content -->
+                <div class="col-lg-8">
+                    <div class="president-message-card p-4 h-100 rounded-4 shadow-sm">
+                        <h2 class="president-heading mb-3">
+                            <span class="president-icon">🎭</span>
+                            Message From The Dean
+                        </h2>
+                        <p>
+                            It gives me immense pleasure to welcome you all to the inaugural edition of Vadodara
+                            Rashtriya Natya Mahotsav — a festival born from our shared passion for storytelling,
+                            expression, and the
+                            boundless spirit of theatre. At Parul University, we believe that the performing arts are
+                            not merely forms of entertainment—they are powerful tools of transformation, reflection, and
+                            cultural preservation.
+                        </p>
+                        <p>
+                            This festival is not just an event; it is a vision — a space where age-old traditions meet
+                            new
+                            ideas, where the experienced share the stage with the emerging, and where the vibrant
+                            theatre culture of Gujarat can shine on a national platform. Inspired by the legacy of
+                            Bharat Rang Mahotsav, this celebration seeks to create opportunities for artists across our
+                            state to showcase their talent, connect with masters of the craft, and experience the depth
+                            and diversity of performance arts in its fullest form.
+                        </p>
+                        <p>
+                            We are honored to be hosting some of the most respected voices in Indian theatre, and we are
+                            equally proud to offer a stage to students and emerging performers who represent the future
+                            of this beautiful art form. I sincerely thank all the participating institutions, artists,
+                            and guests for joining us in this cultural movement.
+                        </p>
+                        <p class="mb-0">
+                            May Vadodara Rashtriya Natya Mahotsav be the beginning of a lasting legacy—one that uplifts,
+                            educates,
+                            and inspires.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer-section pt-5 pb-3 mt-5 bg-dark text-white">
+        <div class="container">
+            <div class="row gy-4 align-items-center ">
+                <!-- Left: Logo & Social -->
+                <div class="col-12 col-lg-4 col-md-12 text-center text-md-start mb-3 mb-md-0">
+                    <a href="#" class="d-inline-block mb-2">
+                        <img src="./assets/images/parul-logo.png" alt="Parul University" width="250" height="100"
+                            style="object-fit:contain;">
+                    </a>
+
+                </div>
+                <!-- Center: Festival Name & Links -->
+                <div class="col-12 col-lg-4 col-md-12 text-center mb-3 mb-md-0">
+                    <div class="footer-title fw-bold mb-2">Vadodara Rashtriya Natya Mahotsav</div>
+
+                </div>
+                <!-- Right: Contact Info -->
+                <div class="col-12 col-lg-4 col-md-12 text-center text-md-end ">
+                    <div class="footer-contact text-lg-end">
+                        <div class="small">Organized by Parul University</div>
+                        <div class="small">Waghodia Road, Vadodara, Gujarat</div>
+                        <div class="small">Email: <a href="mailto:Culturalaffairs@paruluniversity.ac.in"
+                                class="footer-link">Culturalaffairs@paruluniversity.ac.in</a></div>
+                        <div class="small">Phone: <a href="tel:+918360810207" class="footer-link">+91 83608 10207</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-divider my-4">
+            <div class="row">
+                <div class="col text-center">
+                    <div class="footer-copy small">
+                        &copy; 2025 Vadodara Rashtriya Natya Mahotsav · Parul University. All rights reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="./assets/custom/script/script.js"></script>
+</body>
+
+</html>

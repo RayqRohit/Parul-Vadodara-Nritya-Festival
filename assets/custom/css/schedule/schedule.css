@@ -1,0 +1,148 @@
+/* schedule table section */
+
+.schedule-section {
+    background: #fff;
+}
+
+.schedule-hero-heading {
+    font-family: var(--font-montserrat-bold);
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    margin-bottom: 1rem;
+}
+
+.schedule-heading {
+    /* font-family: var(--font-montserrat-bold); */
+    font-family: var(--font-nunito-bold);
+
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #232536;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+}
+
+.schedule-table th {
+    background: #ffe066;
+    color: #232536;
+    font-weight: 700;
+    font-size: 1.05rem;
+    letter-spacing: 0.7px;
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: 2px solid #ffe066;
+}
+
+.schedule-table td {
+    background: #f7f6ef;
+    color: #232536;
+    font-size: 1.01rem;
+    border-top: 1px solid #ece7ce;
+    vertical-align: middle;
+}
+
+.schedule-table tr:nth-child(even) td {
+    background: #fffbe8;
+}
+
+.schedule-table th,
+.schedule-table td {
+    padding: 0.9em 0.7em;
+}
+
+@media (max-width: 600px) {
+    .schedule-heading {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .schedule-table th,
+    .schedule-table td {
+        font-size: 0.93rem;
+        padding: 0.6em 0.4em;
+    }
+
+    .table-responsive {
+        font-size: 0.98rem;
+    }
+}
+
+
+
+
+
+/* schedule hero section */
+
+.schedule-hero {
+    min-height: 54vh;
+    height: 54vh;
+    background: #1c1e2a;
+    overflow: hidden;
+    position: relative;
+    color: #fff;
+}
+
+.schedule-hero-bg {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.58) blur(1px);
+    z-index: 1;
+    pointer-events: none;
+    /* padding-top: 80px; */
+}
+
+.hero-overlay {
+    background: linear-gradient(90deg, rgba(28, 30, 42, 0.6) 0%, rgba(38, 41, 62, 0.5) 100%);
+    z-index: 1;
+}
+
+.schedule-hero .container {
+    z-index: 2;
+    position: relative;
+}
+
+.text-shadow {
+    text-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+.text-shadow-sm {
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.16);
+}
+
+.schedule-info-box {
+    font-size: 1.08rem;
+    backdrop-filter: blur(6px);
+}
+
+
+@media (max-width: 991.98px) {
+    .schedule-hero {
+        min-height: 35vh;
+        height: 55vh;
+        padding: 2.5rem 0 1.8rem 0;
+        padding-top: 80px;
+    }
+
+    .schedule-hero .display-4 {
+        font-size: 2rem;
+    }
+
+    .schedule-info-box {
+        font-size: 0.97rem;
+        padding: 0.65rem 1.2rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .schedule-hero {
+        min-height: 27vh;
+        height: 55vh;
+        padding: 1.2rem 0 1.2rem 0;
+        padding-top: 70px;
+    }
+
+    .schedule-hero .display-4 {
+        font-size: 1.36rem;
+    }
+}

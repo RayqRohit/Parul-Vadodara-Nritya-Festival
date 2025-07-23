@@ -1,0 +1,531 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../fonts/Montserrat-Regular.ttf') format('truetype');
+    /* font-weight: 400; */
+}
+
+@font-face {
+    font-family: 'Montserrat-bold';
+    src: url('../../fonts/Montserrat-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Poppins-regular';
+    src: url('../../fonts/Poppins-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url('../../fonts/Poppins-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Poppins-Black';
+    src: url('../../fonts/Poppins-Black.ttf') format('truetype');
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'LibreFranklin-Bold';
+    src: url('../../fonts/LibreFranklin-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'LibreFranklin-SemiBold';
+    src: url('../../fonts/LibreFranklin-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Nunito-Bold';
+    src: url('../../fonts/Nunito-Bold.ttf') format('truetype');
+}
+
+:root {
+    --font-montserrat: 'Montserrat', 'Inter', sans-serif;
+    --font-poppins: 'Poppins-regular', 'Inter', sans-serif;
+    --font-poppins-bold: 'Poppins-Bold', 'Inter', sans-serif;
+    --font-poppins-black: 'Poppins-Black', 'Inter', sans-serif;
+    --font-montserrat-bold: 'Montserrat-bold', 'Inter', sans-serif;
+    --font-libre-franklin-bold: 'LibreFranklin-Bold', 'Inter', sans-serif;
+    --font-libre-franklin-semi-bold: 'LibreFranklin-SemiBold', 'Inter', sans-serif;
+    --font-nunito-bold: 'Nunito-Bold', 'Inter', sans-serif;
+}
+
+body {
+    font-family: var(--font-poppins);
+}
+
+/* utilities section */
+
+::selection {
+    background: #ffe066;
+    color: #232536;
+}
+
+::-moz-selection {
+    background: #ffe066;
+    color: #232536;
+}
+
+img {
+    user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    pointer-events: auto;
+}
+
+
+/* navbar */
+.navbar-nav .nav-link {
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    position: relative;
+    transition: color 0.2s;
+}
+
+.navbar-nav .nav-link::after {
+    content: "";
+    display: inline-block;
+    height: 2.5px;
+    width: 0;
+    background: var(--color-secondary, #ffb50a);
+    border-radius: 2px;
+    transition: width 0.3s cubic-bezier(0.39, 0.575, 0.565, 1), background 0.3s;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -3px;
+    vertical-align: middle;
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+    width: 100%;
+}
+
+.navbar {
+    background: #003e6d !important;
+    transition: background 0.36s cubic-bezier(.33, 1.16, .67, .98);
+}
+
+.navbar.scrolled {
+    background: #003e6d !important;
+}
+
+.navbar,
+.navbar .navbar-nav .nav-link,
+.navbar .navbar-brand {
+    color: #fff !important;
+}
+
+
+.navbar .nav-link:focus,
+.navbar .nav-link:hover {
+    color: #ffd249 !important;
+    /* or your highlight color */
+}
+
+/* video section */
+
+.video-banner {
+    width: 100%;
+    min-height: 45vw;
+    max-height: 95vh;
+    position: relative;
+    overflow: hidden;
+    /* background: #222; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.video-banner .video-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    min-height: 450px;
+    max-height: 100vh;
+    aspect-ratio: 16 / 9;
+    display: block;
+}
+
+/* countdown section */
+
+.countdown-section {
+    background: linear-gradient(120deg, #232536 65%, #1d1d27 100%);
+    color: #fff;
+    width: 100%;
+    padding: 2.5rem 0 2rem 0;
+}
+
+.countdown-heading {
+    font-family: var(--font-montserrat);
+    /* font-family: var(--font-nunito-bold); */
+
+    font-weight: 800;
+    font-size: 2.5rem;
+    color: #fff;
+    letter-spacing: 1.2px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.10);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+}
+
+.countdown-icon {
+    font-size: 2.3rem;
+    vertical-align: middle;
+    color: #ffe066;
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.13));
+}
+
+.countdown-timer {
+    display: flex;
+    justify-content: center;
+    gap: 2.2rem;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.countdown-timer span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 82px;
+}
+
+.countdown-timer .count-number {
+    font-size: 2.8rem;
+    font-family: var(--font-montserrat);
+    font-weight: 700;
+    background: #ffe066;
+    color: #222;
+    padding: 0.55em 0.6em;
+    border-radius: 1.3em;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+    margin-bottom: 0.2em;
+    letter-spacing: 1px;
+}
+
+.countdown-timer .label {
+    font-size: 1.08rem;
+    font-family: var(--font-poppins);
+    font-weight: 500;
+    background: #232536;
+    color: #ffe066;
+    padding: 0.15em 0.9em;
+    border-radius: 0.8em;
+    margin-top: 0.18em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+
+/* about parul section */
+
+.about-section {
+    background: #fff;
+}
+
+.about-heading {
+    margin-bottom: 0.8rem;
+    /* letter-spacing: 1px; */
+
+    /* font-family: var(--font-montserrat-bold); */
+    font-family: var(--font-nunito-bold);
+
+    font-weight: 800;
+    font-size: 2.5rem;
+    color: #232536;
+}
+
+.about-lead {
+    font-size: 1.16rem;
+    color: #444;
+    font-weight: 500;
+}
+
+.about-img {
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 20px rgba(44, 55, 74, 0.08);
+    /* Optional: add a subtle border */
+    border: 1px solid #e7e8ec;
+    margin-top: 0.7rem;
+}
+
+.parul-university-row {
+    width: 100%;
+}
+
+
+/* about gujarat mahaotsav section */
+
+.about-festival-section {
+    background: #fff;
+}
+
+.festival-heading {
+    /* font-family: var(--font-montserrat-bold); */
+    font-family: var(--font-nunito-bold);
+    font-weight: 800;
+    font-size: 2.4rem;
+    color: #232536;
+    margin-bottom: 0.8rem;
+    letter-spacing: 1.1px;
+}
+
+.festival-lead {
+    font-size: 1.18rem;
+    color: #333;
+    font-weight: 500;
+}
+
+.bento-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    grid-template-rows: 160px 160px;
+    gap: 18px;
+    height: 340px;
+}
+
+.bento-item {
+    overflow: hidden;
+    border-radius: 1.1rem;
+    box-shadow: 0 3px 24px rgba(36, 36, 36, 0.11);
+    transition: transform 0.25s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.bento-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: scale 0.3s;
+}
+
+.bento-item:hover {
+    transform: translateY(-6px) scale(1.025);
+    box-shadow: 0 8px 32px rgba(36, 36, 36, 0.18);
+}
+
+.bento-1 {
+    grid-row: 1 / span 2;
+    grid-column: 1 / span 1;
+}
+
+.bento-2 {
+    grid-row: 1 / span 1;
+    grid-column: 2 / span 1;
+}
+
+.bento-3 {
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
+}
+
+.bento-4 {
+    display: none;
+    /* Optionally keep for >2x2 grid or on mobile */
+}
+
+
+
+
+.bento-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 16px;
+    height: 450px;
+}
+
+.bento-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+    box-shadow: 0 3px 18px rgba(44, 44, 44, 0.08);
+    transition: transform 0.25s cubic-bezier(.42, 0, .58, 1);
+}
+
+.about-festival-section-row {
+    width: 100%;
+}
+
+/* president section */
+
+.president-desk-section {
+    background: #f8fafc;
+}
+
+.president-img-wrap {
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.president-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 1.25rem;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 22px rgba(80, 80, 80, 0.11);
+    transition: box-shadow 0.25s;
+}
+
+.president-img:hover {
+    box-shadow: 0 8px 32px rgba(36, 36, 36, 0.21);
+}
+
+.president-message-card {
+    background: #fff;
+    border-left: 6px solid #232536;
+    font-size: 1.07rem;
+    color: #232536;
+    font-family: var(--font-poppins);
+    box-shadow: 0 2px 18px rgba(30, 30, 40, 0.06);
+}
+
+.president-heading {
+    /* font-family: var(--font-montserrat); */
+    font-family: var(--font-nunito-bold);
+    font-weight: 800;
+    color: #232536;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 1rem;
+    letter-spacing: 1.1px;
+}
+
+.president-icon {
+    font-size: 1.8rem;
+    color: #ffe066;
+    vertical-align: middle;
+}
+
+.president-name h4 {
+    /* font-family: var(--font-montserrat); */
+    font-family: var(--font-nunito-bold);
+    font-weight: 700;
+    color: #232536;
+    margin-bottom: 0.2rem;
+}
+
+
+
+
+/* footer section */
+
+.footer-section {
+    background: #1b1b23;
+    color: #fff;
+    font-family: var(--font-poppins);
+}
+
+.footer-section .footer-title {
+    font-family: var(--font-montserrat);
+    font-size: 1.15rem;
+    letter-spacing: 1.1px;
+    color: #ffe066;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-link {
+    color: #d9d9e3;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.2s;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+    color: #ffe066;
+    text-decoration: underline;
+}
+
+.footer-divider {
+    border-color: rgba(255, 255, 255, 0.08);
+}
+
+.footer-social {
+    margin-top: 0.2rem;
+}
+
+.footer-social-link {
+    color: #ffe066;
+    font-size: 1.35rem;
+    transition: color 0.18s;
+}
+
+.footer-social-link:hover {
+    color: #ff4b2b;
+}
+
+.footer-contact .small {
+    color: #ddd;
+    font-size: 0.97rem;
+    margin-bottom: 0.12rem;
+}
+
+.footer-copy {
+    color: #aaa;
+    font-size: 0.93rem;
+    letter-spacing: 0.5px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 767.98px) {
+    .footer-section .row>div {
+        margin-bottom: 1.3rem;
+    }
+
+    .footer-links {
+        gap: 0.8rem;
+        font-size: 0.98rem;
+    }
+
+    .footer-title {
+        font-size: 1.03rem;
+    }
+}
+
+
+
+.navbar-toggler-icon {
+    color: white !important;
+}
+
+@media (min-width: 768px) {
+    .text-md-start {
+        text-align: center !important;
+    }
+
+    .text-md-end {
+        text-align: center !important;
+    }
+}

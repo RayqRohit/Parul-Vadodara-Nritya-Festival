@@ -1,0 +1,212 @@
+@media (max-width : 1200px) {
+
+    .parul-university-row {
+        flex-direction: column-reverse;
+    }
+
+    .about-parul-text,
+    .about-parul-image {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    .about-lead {
+        text-align: justify !important;
+    }
+
+    .about-festival-row{
+        padding: 0;
+    }
+
+}
+
+@media (max-width: 991.98px) {
+
+    .nav-link {
+        display: inline-block;
+    }
+
+    .navbar-nav .nav-link:hover::after,
+    .navbar-nav .nav-link.active::after {
+        width: 100%;
+    }
+
+    .video-banner {
+        padding-top: 70px;
+        /* or adjust as per your smaller navbar height */
+    }
+
+
+    /* vadodara mahaootsav section */
+
+    .about-festival-section .row {
+        flex-direction: column-reverse;
+    }
+
+    .bento-grid {
+        grid-template-columns: 1fr 1fr;
+        /* grid-template-rows: 120px 120px; */
+        height: auto;
+        gap: 11px;
+        margin-bottom: 1rem;
+        margin-top: 1.2rem;
+    }
+
+    .bento-1,
+    .bento-2,
+    .bento-3 {
+        grid-row: auto;
+        grid-column: auto;
+    }
+
+    .bento-4 {
+        display: block;
+        /* Optionally keep for >2x2 grid or on mobile */
+    }
+
+    .bento-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+
+
+    .about-heading {
+        text-align: center;
+    }
+
+    .festival-heading {
+        text-align: center;
+    }
+
+    .about-lead,
+    .festival-lead {
+
+        text-align: justify !important;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .navbar {
+        background: rgba(30, 30, 36, 0.40) !important;
+        backdrop-filter: blur(18px) saturate(140%);
+        -webkit-backdrop-filter: blur(18px) saturate(140%);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.07);
+        border-bottom: 1.5px solid rgba(255, 255, 255, 0.13);
+        transition: background 0.4s, box-shadow 0.4s, border 0.4s;
+    }
+
+    .navbar.scrolled {
+        background: #003e6d !important;
+        box-shadow: 0 2px 16px rgba(0, 0, 0, 0.14);
+        border-bottom: 1.5px solid rgba(255, 255, 255, 0.06);
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .president-message-card {
+        padding: 1.5rem 1rem;
+        font-size: 1rem;
+        border-left: 3px solid #232536;
+    }
+
+    .president-heading {
+        font-size: 1.3rem;
+    }
+
+    .president-img-wrap {
+        /* max-width: 220px; */
+        max-width: 270px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+
+
+
+}
+
+@media (max-width: 700px) {
+    .countdown-heading {
+        font-size: 1.6rem;
+    }
+
+    .countdown-timer {
+        gap: 1rem;
+    }
+
+    .countdown-timer span {
+        min-width: 62px;
+    }
+
+    .countdown-timer .count-number {
+        font-size: 1.45rem;
+        padding: 0.4em 0.35em;
+        border-radius: 0.85em;
+    }
+
+    .countdown-timer .label {
+        font-size: 0.85rem;
+        padding: 0.08em 0.5em;
+        border-radius: 0.6em;
+    }
+
+    .about-heading {
+        text-align: center;
+    }
+
+
+}
+
+@media (max-width: 575.98px) {
+    .bento-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 90px 90px;
+        height: 185px;
+        gap: 7px;
+    }
+
+    .festival-heading {
+        font-size: 1.22rem;
+    }
+
+    .festival-lead {
+        font-size: 1.1rem;
+        margin-top: 30px;
+    }
+
+    .bento-grid {
+        grid-template-columns: 1fr;
+        /* grid-template-rows: 70px 70px; */
+        /* height: 140px; */
+        height: auto;
+        gap: 4px;
+    }
+
+    .countdown-icon {
+        font-size: 2rem;
+    }
+
+    .about-heading {
+        font-size: 2.1rem;
+        text-align: center;
+    }
+
+    .festival-heading {
+        font-size: 1.9rem;
+        text-align: center;
+    }
+
+    .president-name h4 {
+        font-size: 1.5rem;
+    }
+
+    .parul-university-row{
+        padding: 0;
+    }
+}
