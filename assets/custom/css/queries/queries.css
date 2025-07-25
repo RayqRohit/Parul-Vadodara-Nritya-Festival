@@ -371,3 +371,11 @@
 
 
 /* newly added 2 */
+
+
+@media (max-width : 400px) {
+    .nav-logo {
+        width: 220px;
+        padding-block: 5px;
+    }
+}

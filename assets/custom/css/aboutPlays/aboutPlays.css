@@ -260,3 +260,10 @@
 .plays-hero-heading {
     font-family: var(--font-montserrat-bold);
 }
+
+@media (max-width : 400px) {
+    .nav-logo {
+        width: 220px;
+        padding-block: 5px;
+    }
+}

@@ -1,11 +1,79 @@
 document.addEventListener('DOMContentLoaded', function () {
     const navbar = document.querySelector('.navbar');
     window.addEventListener('scroll', function () {
-        if (window.scrollY > 30) {
+        if (window.scrollY > 0) {
             navbar.classList.add('scrolled');
         } else {
             navbar.classList.remove('scrolled');
         }
+    });
+});
+
+// navbar 
+
+document.addEventListener('DOMContentLoaded', function () {
+    const navbar = document.getElementById('mainNavbar');
+    const navbarToggler = document.querySelector('.navbar-toggler');
+    const body = document.body;
+
+    // Function to prevent body scroll
+    function preventBodyScroll() {
+        body.classList.add('navbar-open');
+    }
+
+    // Function to allow body scroll
+    function allowBodyScroll() {
+        body.classList.remove('navbar-open');
+    }
+
+    // Listen for Bootstrap collapse events to control body scroll
+    navbar.addEventListener('show.bs.collapse', function () {
+        preventBodyScroll();
+    });
+
+    navbar.addEventListener('hide.bs.collapse', function () {
+        allowBodyScroll();
+    });
+
+    // Close menu when clicking outside (on backdrop)
+    document.addEventListener('click', function (e) {
+        const isClickInsideNavbar = navbar.contains(e.target);
+        const isClickOnToggler = navbarToggler.contains(e.target);
+        const isMenuOpen = navbar.classList.contains('show');
+
+        // If menu is open and click is outside navbar and not on toggler
+        if (isMenuOpen && !isClickInsideNavbar && !isClickOnToggler) {
+            navbarToggler.click();
+        }
+    });
+
+    // Close menu when pressing Escape key
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && navbar.classList.contains('show')) {
+            navbarToggler.click();
+        }
+    });
+
+    // Close menu when clicking on nav links (for better UX)
+    const navLinks = navbar.querySelectorAll('.nav-link');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function () {
+            if (window.innerWidth <= 991.98) {
+                navbarToggler.click();
+            }
+        });
+    });
+
+    // Handle window resize - close menu if screen becomes desktop size
+    window.addEventListener('resize', function () {
+        if (window.innerWidth > 991.98 && navbar.classList.contains('show')) {
+            navbarToggler.click();
+        }
+    });
+
+    // Clean up on page unload
+    window.addEventListener('beforeunload', function () {
+        allowBodyScroll();
     });
 });
 

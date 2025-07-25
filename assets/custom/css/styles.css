@@ -5,6 +5,17 @@
     text-decoration: none;
 }
 
+section[id] {
+    scroll-margin-top: 80px;
+}
+
+/* #about-festival,
+#about-pipa,
+#president-desk,
+#festival-countdown-section {
+    scroll-margin-top: 100px;
+} */
+
 @font-face {
     font-family: 'Montserrat';
     src: url('../../fonts/Montserrat-Regular.ttf') format('truetype');
@@ -24,30 +35,19 @@
 }
 
 @font-face {
-    font-family: 'Poppins-Bold';
-    src: url('../../fonts/Poppins-Bold.ttf') format('truetype');
-    font-weight: 700;
-}
-
-@font-face {
     font-family: 'Poppins-Black';
     src: url('../../fonts/Poppins-Black.ttf') format('truetype');
     font-weight: 900;
 }
 
 @font-face {
-    font-family: 'LibreFranklin-Bold';
-    src: url('../../fonts/LibreFranklin-Bold.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'LibreFranklin-SemiBold';
-    src: url('../../fonts/LibreFranklin-SemiBold.ttf') format('truetype');
-}
-
-@font-face {
     font-family: 'Nunito-Bold';
     src: url('../../fonts/Nunito-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Prompt';
+    src: url('../../fonts/Prompt-SemiBold.ttf') format('truetype');
 }
 
 :root {
@@ -59,6 +59,7 @@
     --font-libre-franklin-bold: 'LibreFranklin-Bold', 'Inter', sans-serif;
     --font-libre-franklin-semi-bold: 'LibreFranklin-SemiBold', 'Inter', sans-serif;
     --font-nunito-bold: 'Nunito-Bold', 'Inter', sans-serif;
+    --font-prompt: 'Prompt', 'Inter', sans-serif;
 }
 
 body {
@@ -139,13 +140,12 @@ img {
 
 /* video section */
 
-.video-banner {
+/* .video-banner {
     width: 100%;
     min-height: 45vw;
     max-height: 95vh;
     position: relative;
     overflow: hidden;
-    /* background: #222; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -161,6 +161,137 @@ img {
     max-height: 100vh;
     aspect-ratio: 16 / 9;
     display: block;
+} */
+
+
+.video-banner {
+    width: 100%;
+    min-height: 50vw;
+    max-height: 95vh;
+    position: relative;
+    background: url("../../images/46791.jpg") center/cover no-repeat;
+    background-color: #1b1b1b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.video-banner::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.video-banner>* {
+    position: relative;
+    z-index: 1;
+}
+
+/* Hero Content Styles */
+.hero-content {
+    color: #fff;
+    max-width: 600px;
+}
+
+/* Hero Badge */
+.hero-badge {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+}
+
+.badge-date,
+.badge-location {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Hero Title */
+.hero-title {
+    /* font-family: var(--font-montserrat-bold); */
+    font-family: var(--font-prompt);
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 1;
+    /* letter-spacing: -8px; */
+
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 1.5rem;
+}
+
+.hero-title-highlight {
+    color: #ffe066;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Hero Description */
+.hero-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+/* Hero Buttons */
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.hero-btn-primary {
+    background: #ffe066;
+    border: none;
+    color: #232536;
+    padding: 0.75rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.hero-btn-primary:hover {
+    background: #ffd249;
+    color: #232536;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255, 224, 102, 0.3);
+}
+
+.hero-btn-secondary {
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    color: #fff;
+    padding: 0.75rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.hero-btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #ffe066;
+    color: #ffe066;
+    transform: translateY(-2px);
+}
+
+.hero-text-stroke,
+.title-stroke {
+    color: transparent;
+    -webkit-text-stroke: 0.2px white;
+    text-stroke: 0.8px #ffffff;
+    text-transform: uppercase;
 }
 
 /* countdown section */
@@ -239,40 +370,54 @@ img {
 
 /* about parul section */
 
-.about-section {
-    background: #fff;
+/* About University Section */
+.about-university-section {
+    position: relative;
+    min-height: 100vh;
+    background: linear-gradient(135deg, rgba(35, 0, 85, 0.9), rgba(255, 145, 77, 0.8)),
+        url("../../images/pu-bg-img.jpg") center/cover no-repeat;
+    /* background-attachment: fixed; */
+    /* Parallax effect */
+    display: flex;
+    align-items: center;
+    padding: 80px 0;
 }
 
-.about-heading {
-    margin-bottom: 0.8rem;
-    /* letter-spacing: 1px; */
 
-    /* font-family: var(--font-montserrat-bold); */
-    font-family: var(--font-nunito-bold);
 
+/* Title styling */
+.about-university-title {
+    font-family: var(--font-prompt);
+    font-size: 3.5rem;
     font-weight: 800;
-    font-size: 2.5rem;
-    color: #232536;
+    color: #e5334b;
+    /* text-align: center; */
+    margin-bottom: 2rem;
+    letter-spacing: 2px;
+    position: relative;
 }
 
-.about-lead {
-    font-size: 1.16rem;
-    color: #444;
-    font-weight: 500;
-}
+/* .about-university-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #ff6b6b, #ff9a00);
+    border-radius: 2px;
+} */
 
-.about-img {
-    border-radius: 1.5rem;
-    box-shadow: 0 4px 20px rgba(44, 55, 74, 0.08);
-    /* Optional: add a subtle border */
-    border: 1px solid #e7e8ec;
-    margin-top: 0.7rem;
+/* Text styling */
+.about-university-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #fff;
+    text-align: justify;
+    font-weight: 400;
+    margin-bottom: 0;
 }
-
-.parul-university-row {
-    width: 100%;
-}
-
 
 /* about gujarat mahaotsav section */
 

@@ -146,3 +146,11 @@
         font-size: 1.36rem;
     }
 }
+
+
+@media (max-width : 400px) {
+    .nav-logo {
+        width: 220px;
+        padding-block: 5px;
+    }
+}
