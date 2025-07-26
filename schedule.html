@@ -52,7 +52,7 @@
     <div class="container position-relative z-2 text-white py-5">
       <div class="row justify-content-center pt-5">
         <div class="col-lg-10 text-center">
-          <h1 class="display-5 fw-bold mb-2 text-shadow schedule-hero-heading">Festival Schedule</h1>
+          <h1 class="display-5 fw-bold mb-2 text-shadow schedule-hero-heading">Schedule</h1>
           <p class="lead mb-4 text-shadow-sm">19th – 22nd August 2025 | Parul University, Vadodara</p>
           <div
             class="d-inline-flex align-items-center bg-white bg-opacity-75 shadow rounded-3 px-4 py-2 mb-2 flex-wrap gap-2 schedule-info-box">
@@ -75,78 +75,189 @@
 
   <!-- table section -->
 
+  <!-- table section -->
+  <!-- table section -->
   <section class="schedule-section py-5" id="schedule">
     <div class="container">
-      <h2 class="schedule-heading text-center mb-4">SCHEDULE</h2>
-      <div class="table-responsive">
-        <table class="table schedule-table align-middle">
-          <thead>
-            <tr>
-              <th>Day</th>
-              <th>Date</th>
-              <th>Time</th>
-              <th>Name of the play</th>
-              <th>Cast</th>
-            </tr>
-          </thead>
-          <tbody>
-            <!-- Day 1 -->
-            <tr>
-              <td rowspan="2"><b>Day 1</b></td>
-              <td rowspan="2">19<sup>th</sup> August, 2025</td>
-              <td>11:30 AM</td>
-              <td>“Ek Mulaqat”</td>
-              <td>Mr. Shekar Suman &amp; Ms. Geetika Tyagi</td>
-            </tr>
-            <tr>
-              <td>4:00 PM</td>
-              <td>“Tax Free Entertainment”</td>
-              <td>Mr. Arun Kumar Malik and cast</td>
-            </tr>
-            <!-- Day 2 -->
-            <tr>
-              <td rowspan="2"><b>Day 2</b></td>
-              <td rowspan="2">20<sup>th</sup> August, 2025</td>
-              <td>11:30 AM</td>
-              <td>“Massage”</td>
-              <td>Mr. Rakesh Bedi and cast</td>
-            </tr>
-            <tr>
-              <td>4:00 PM</td>
-              <td>“Belibas”</td>
-              <td>Mr. Rajeev Raj and cast</td>
-            </tr>
-            <!-- Day 3 -->
-            <tr>
-              <td rowspan="2"><b>Day 3</b></td>
-              <td rowspan="2">21<sup>st</sup> August, 2025</td>
-              <td>11:30 AM</td>
-              <td>“Jeena Isi Ka Naam Hai”</td>
-              <td>Ms. Himani Shivpuri and Mr. Rajendra Gupta</td>
-            </tr>
-            <tr>
-              <td>4:00 PM</td>
-              <td>“Amma Chekkina Bomma”</td>
-              <td>Mr. Venkat Govada and Cast</td>
-            </tr>
-            <!-- Day 4 -->
-            <tr>
-              <td rowspan="2"><b>Day 4</b></td>
-              <td rowspan="2">22<sup>nd</sup> August, 2025</td>
-              <td>11:30 AM</td>
-              <td>“Chanakya”</td>
-              <td>Mr. Manoj Joshi and Cast</td>
-            </tr>
-            <tr>
-              <td>4:00 PM</td>
-              <td>“Babuji Theek Kahte The”</td>
-              <td>Mr. Shyam Vashishth and Cast</td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="row justify-content-center">
+        <div class="col-lg-12">
+          <h2 class="schedule-heading text-center mb-5"><span class="title-stroke">FESTIVAL</span> SCHEDULE</h2>
+
+          <!-- Schedule Cards for Mobile -->
+          <div class="d-block d-lg-none">
+            <div class="schedule-cards">
+              <!-- Day 1 Card -->
+              <div class="schedule-card mb-4">
+                <div class="card-header">
+                  <div class="day-badge">Day 1</div>
+                  <div class="date-info">19th August, 2025</div>
+                </div>
+                <div class="card-body">
+                  <div class="show-item">
+                    <div class="time-badge">11:30 AM</div>
+                    <div class="play-name">"Ek Mulaqat"</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Day 2 Card -->
+              <div class="schedule-card mb-4">
+                <div class="card-header">
+                  <div class="day-badge">Day 2</div>
+                  <div class="date-info">20th August, 2025</div>
+                </div>
+                <div class="card-body">
+                  <div class="show-item">
+                    <div class="time-badge">11:30 AM</div>
+                    <div class="play-name">"Massage"</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Day 3 Card -->
+              <div class="schedule-card mb-4">
+                <div class="card-header">
+                  <div class="day-badge">Day 3</div>
+                  <div class="date-info">21st August, 2025</div>
+                </div>
+                <div class="card-body">
+                  <div class="show-item">
+                    <div class="time-badge">11:30 AM</div>
+                    <div class="play-name">"Jeena Isi Ka Naam Hai"</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Day 4 Card -->
+              <div class="schedule-card mb-4">
+                <div class="card-header">
+                  <div class="day-badge">Day 4</div>
+                  <div class="date-info">22nd August, 2025</div>
+                </div>
+                <div class="card-body">
+                  <div class="show-item">
+                    <div class="time-badge">11:30 AM</div>
+                    <div class="play-name">"Chanakya"</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Enhanced Table for Desktop -->
+          <div class="d-none d-lg-block">
+            <div class="table-container">
+              <table class="table schedule-table-elegant">
+                <thead>
+                  <tr>
+                    <th class="day-column">
+                      <i class="bi bi-calendar-week me-2"></i>Day
+                    </th>
+                    <th class="date-column">
+                      <i class="bi bi-calendar-date me-2"></i>Date
+                    </th>
+                    <th class="time-column">
+                      <i class="bi bi-clock me-2"></i>Time
+                    </th>
+                    <th class="play-column">
+                      <i class="bi bi-masks-theater me-2"></i>Name of the Play
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- Day 1 -->
+                  <tr>
+                    <td class="day-cell">
+                      <div class="day-wrapper">
+                        <span class="day-number">Day 1</span>
+                      </div>
+                    </td>
+                    <td class="date-cell">
+                      <div class="date-wrapper">
+                        <span class="date-number">19</span>
+                        <span class="date-month">Aug 2025</span>
+                      </div>
+                    </td>
+                    <td class="time-cell">
+                      <span class="time-badge-table">11:30 AM</span>
+                    </td>
+                    <td class="play-cell">
+                      <span class="play-title">"Ek Mulaqat"</span>
+                    </td>
+                  </tr>
+
+                  <!-- Day 2 -->
+                  <tr>
+                    <td class="day-cell">
+                      <div class="day-wrapper">
+                        <span class="day-number">Day 2</span>
+                      </div>
+                    </td>
+                    <td class="date-cell">
+                      <div class="date-wrapper">
+                        <span class="date-number">20</span>
+                        <span class="date-month">Aug 2025</span>
+                      </div>
+                    </td>
+                    <td class="time-cell">
+                      <span class="time-badge-table">11:30 AM</span>
+                    </td>
+                    <td class="play-cell">
+                      <span class="play-title">"Massage"</span>
+                    </td>
+                  </tr>
+
+                  <!-- Day 3 -->
+                  <tr>
+                    <td class="day-cell">
+                      <div class="day-wrapper">
+                        <span class="day-number">Day 3</span>
+                      </div>
+                    </td>
+                    <td class="date-cell">
+                      <div class="date-wrapper">
+                        <span class="date-number">21</span>
+                        <span class="date-month">Aug 2025</span>
+                      </div>
+                    </td>
+                    <td class="time-cell">
+                      <span class="time-badge-table">11:30 AM</span>
+                    </td>
+                    <td class="play-cell">
+                      <span class="play-title">"Jeena Isi Ka Naam Hai"</span>
+                    </td>
+                  </tr>
+
+                  <!-- Day 4 -->
+                  <tr>
+                    <td class="day-cell">
+                      <div class="day-wrapper">
+                        <span class="day-number">Day 4</span>
+                      </div>
+                    </td>
+                    <td class="date-cell">
+                      <div class="date-wrapper">
+                        <span class="date-number">22</span>
+                        <span class="date-month">Aug 2025</span>
+                      </div>
+                    </td>
+                    <td class="time-cell">
+                      <span class="time-badge-table">11:30 AM</span>
+                    </td>
+                    <td class="play-cell">
+                      <span class="play-title">"Chanakya"</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
+
+
 
 
   <footer class="footer-section pt-5 pb-3   text-white">

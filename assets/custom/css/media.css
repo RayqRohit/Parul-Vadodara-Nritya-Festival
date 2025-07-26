@@ -6,18 +6,18 @@
   .parul-university-row {
     flex-direction: column-reverse;
   }
-  
+
   .about-parul-text,
   .about-parul-image {
     width: 100%;
     text-align: center;
     padding: 0;
   }
-  
+
   .about-lead {
     text-align: justify !important;
   }
-  
+
   .about-festival-row {
     padding: 0;
   }
@@ -27,28 +27,28 @@
   .nav-link {
     display: inline-block;
   }
-  
+
   .navbar-nav .nav-link:hover::after,
   .navbar-nav .nav-link.active::after {
     width: 100%;
   }
-  
+
   .video-banner {
     padding-top: 70px;
   }
-  
+
   /* Vadodara Mahotsav Section */
   .about-festival-section .row {
     flex-direction: column-reverse;
   }
-  
+
   .bento-grid {
     grid-template-columns: 1fr 1fr;
     height: auto;
     gap: 11px;
     margin: 1.2rem 0 1rem;
   }
-  
+
   .bento-1,
   .bento-2,
   .bento-3,
@@ -56,12 +56,12 @@
     grid-row: auto;
     grid-column: auto;
   }
-  
+
   .about-heading,
   .festival-heading {
     text-align: center;
   }
-  
+
   .about-lead,
   .festival-lead {
     text-align: justify !important;
@@ -73,7 +73,7 @@
     background: transparent !important;
     transition: background 0.4s, box-shadow 0.4s, border 0.4s;
   }
-  
+
   .navbar.scrolled {
     background: #003e6d !important;
     box-shadow: 0 2px 16px rgba(0, 0, 0, 0.14);
@@ -86,13 +86,13 @@
     font-size: 1rem;
     border-left: 3px solid #232536;
   }
-  
+
   .president-heading {
     font-size: 1.3rem;
   }
-  
+
   .president-img-wrap {
-    max-width: 270px;
+
     margin: 0 auto;
   }
 }
@@ -101,27 +101,27 @@
   .countdown-heading {
     font-size: 1.6rem;
   }
-  
+
   .countdown-timer {
     gap: 1rem;
   }
-  
+
   .countdown-timer span {
     min-width: 62px;
   }
-  
+
   .countdown-timer .count-number {
     font-size: 1.45rem;
     padding: 0.4em 0.35em;
     border-radius: 0.85em;
   }
-  
+
   .countdown-timer .label {
     font-size: 0.85rem;
     padding: 0.08em 0.5em;
     border-radius: 0.6em;
   }
-  
+
   .about-heading {
     text-align: center;
   }
@@ -133,36 +133,36 @@
     height: auto;
     gap: 4px;
   }
-  
+
   .festival-heading {
     font-size: 1.22rem;
   }
-  
+
   .festival-lead {
     font-size: 1.1rem;
     margin-top: 30px;
   }
-  
+
   .countdown-icon {
     font-size: 2rem;
   }
-  
+
   .about-heading {
     font-size: 2.1rem;
   }
-  
+
   .festival-heading {
     font-size: 1.9rem;
   }
-  
+
   .president-name h4 {
     font-size: 1.5rem;
   }
-  
+
   .parul-university-row {
     padding: 0;
   }
-  
+
   .nav-logo {
     width: 260px;
     height: auto;
@@ -194,34 +194,34 @@
     padding: 80px 1rem 0;
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
   }
-  
+
   #mainNavbar.show {
     transform: translateX(0);
   }
-  
+
   .collapse:not(.show) {
     display: block !important;
     visibility: hidden;
     pointer-events: none;
   }
-  
+
   .collapse.show {
     visibility: visible;
     pointer-events: auto;
   }
-  
+
   #mainNavbar .navbar-nav {
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
     padding-top: 5rem;
   }
-  
+
   #mainNavbar .nav-item {
     width: 100%;
     margin-bottom: 0.5rem;
   }
-  
+
   #mainNavbar .nav-link {
     padding: 0.75rem 1rem;
     color: #fff !important;
@@ -229,17 +229,17 @@
     width: 100%;
     text-align: left;
   }
-  
+
   #mainNavbar .nav-link:hover {
     background-color: rgba(255, 255, 255, 0.1);
     color: #ffd249 !important;
   }
-  
+
   .navbar-toggler {
     position: relative;
     z-index: 1100;
   }
-  
+
   #mainNavbar::before {
     content: '';
     position: fixed;
@@ -254,17 +254,17 @@
     z-index: -1;
     pointer-events: none;
   }
-  
+
   #mainNavbar.show::before {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
   }
-  
+
   #mainNavbar::-webkit-scrollbar {
     display: none;
   }
-  
+
   #mainNavbar {
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -280,11 +280,11 @@
     max-height: 100vh;
     padding-top: 60px;
   }
-  
+
   .hero-title {
     font-size: 7.5rem;
   }
-  
+
   .hero-description {
     font-size: 1.3rem;
   }
@@ -296,19 +296,19 @@
     max-height: 85vh;
     padding-top: 55px;
   }
-  
+
   .hero-title {
     font-size: 7rem;
   }
-  
+
   .hero-description {
     font-size: 1.15rem;
   }
-  
+
   .about-university-title {
     font-size: 3rem;
   }
-  
+
   .about-university-text {
     font-size: 1rem;
   }
@@ -321,31 +321,31 @@
     padding-top: 70px;
     background-position: center center;
   }
-  
+
   .video-banner::after {
     background: rgba(0, 0, 0, 0.45);
   }
-  
+
   .hero-content {
     max-width: 100%;
   }
-  
+
   .hero-title {
     font-size: 90px;
     line-height: 1;
   }
-  
+
   .about-university-title {
     flex-direction: column;
     gap: 0.5rem;
   }
-  
+
   .about-university-title div {
     display: flex;
     gap: 0.5rem;
     flex-wrap: wrap;
   }
-  
+
   .about-university-text {
     font-size: 0.95rem;
     text-align: left;
@@ -358,38 +358,38 @@
     padding-top: 80px;
     background-attachment: scroll;
   }
-  
+
   .hero-title {
     font-size: 10vw;
     line-height: 1.2;
   }
-  
+
   .hero-btn-primary,
   .hero-btn-secondary {
     padding: 0.65rem 1.5rem;
     font-size: 1rem;
   }
-  
+
   .badge-date,
   .badge-location {
     font-size: 0.85rem;
     padding: 0.4rem 0.8rem;
   }
-  
+
   .about-university-title div {
     justify-content: center;
   }
-  
+
   .about-university-title {
     font-size: 9vw;
     text-align: center;
   }
-  
+
   .about-university-text {
     font-size: 0.95rem;
     text-align: justify;
   }
-  
+
   .about-university-section {
     padding: 60px 0;
   }
@@ -402,27 +402,27 @@
     padding-top: 65px;
     background-position: center top;
   }
-  
+
   .video-banner::after {
     background: rgba(0, 0, 0, 0.5);
   }
-  
+
   .hero-title {
     font-size: 12vw;
     margin-bottom: 1rem;
   }
-  
+
   .hero-description {
     font-size: 0.95rem;
     margin-bottom: 1.5rem;
   }
-  
+
   .hero-buttons {
     gap: 0.8rem;
     width: 100%;
     align-items: flex-start;
   }
-  
+
   .hero-btn-primary,
   .hero-btn-secondary {
     width: 100%;
@@ -436,7 +436,7 @@
   .hero-buttons {
     flex-direction: column;
   }
-  
+
   .hero-btn-primary,
   .hero-btn-secondary {
     width: 100%;
@@ -450,21 +450,21 @@
     min-height: 100vh;
     padding-top: 50px;
   }
-  
+
   .hero-title {
     font-size: 2.2rem;
     margin-bottom: 0.8rem;
   }
-  
+
   .hero-description {
     font-size: 0.95rem;
     margin-bottom: 1rem;
   }
-  
+
   .hero-buttons {
     gap: 0.5rem;
   }
-  
+
   .hero-badge {
     margin-bottom: 1rem;
   }
@@ -476,4 +476,112 @@
 body.navbar-open {
   overflow: hidden !important;
   width: 100%;
+}
+
+
+/* for the about festival section */
+
+
+/* Responsive Design */
+@media (max-width: 1199.98px) {
+  .festival-grid {
+    height: 450px;
+    gap: 1.2rem;
+  }
+
+  .festival-gallery-wrapper {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .about-festival-row h2 {
+    width: 100%;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .festival-gallery-section {
+    margin-top: 2rem;
+  }
+
+  .festival-gallery-wrapper {
+    padding: 1.2rem;
+  }
+
+  #festivalGalleryCarousel .carousel-item img {
+    height: 280px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .about-festival-row h2 {
+    font-size: 6vw;
+  }
+
+  .festival-lead {
+    font-size: 1.1rem;
+    text-align: justify;
+  }
+
+  .festival-gallery-wrapper {
+    padding: 1rem;
+    margin: 0 -15px;
+    border-radius: 0;
+  }
+
+  #festivalGalleryCarousel .carousel-item img {
+    height: 280px;
+  }
+
+  #festivalGalleryCarousel .carousel-control-prev,
+  #festivalGalleryCarousel .carousel-control-next {
+    width: 40px;
+    height: 40px;
+  }
+
+  #festivalGalleryCarousel .carousel-control-prev {
+    left: 15px;
+  }
+
+  #festivalGalleryCarousel .carousel-control-next {
+    right: 15px;
+  }
+
+  #festivalGalleryCarousel .carousel-caption {
+    padding: 0.6rem 1rem;
+    bottom: 1rem;
+  }
+
+  #festivalGalleryCarousel .carousel-caption h5 {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .about-festival-row h2 {
+    font-size: 8vw;
+    line-height: 1.4;
+  }
+
+  .festival-lead {
+    font-size: 1rem;
+  }
+
+  #festivalGalleryCarousel .carousel-item img {
+    height: 250px;
+  }
+
+  #festivalGalleryCarousel .carousel-control-prev,
+  #festivalGalleryCarousel .carousel-control-next {
+    width: 35px;
+    height: 35px;
+  }
+
+  #festivalGalleryCarousel .carousel-control-prev-icon,
+  #festivalGalleryCarousel .carousel-control-next-icon {
+    width: 20px;
+    height: 20px;
+    background-size: 20px;
+  }
 }
