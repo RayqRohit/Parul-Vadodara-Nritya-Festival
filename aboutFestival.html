@@ -16,12 +16,12 @@
 <body>
 
     <!-- navbar -->
-  <nav class="navbar navbar-expand-lg fixed-top py-2 navbar-dark ">
+    <nav class="navbar navbar-expand-lg fixed-top py-2 navbar-dark ">
 
         <div class="container">
             <a class="navbar-brand fw-bold" href="/index.html">
-                <img class="nav-logo" src="./assets/images/main-logo.svg" alt="Parul University Logo" width="300" height="70"
-                    style="object-fit: contain;">
+                <img class="nav-logo" src="./assets/images/main-logo.svg" alt="Parul University Logo" width="300"
+                    height="70" style="object-fit: contain;">
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
@@ -252,15 +252,36 @@
         </div>
     </footer>
 
-
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn" class="scroll-to-top-btn" title="Go to top">
+        <img src="./assets/images/chevron-up.svg" alt="">
+    </button>
 
 
     <script src="./bootstrap/js/bootstrap.min.js"></script>
     <script src="./assets/custom/script/script.js"></script>
     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+            window.addEventListener('scroll', function () {
+                if (window.pageYOffset > 50) {
+                    scrollToTopBtn.classList.add('show');
+                } else {
+                    scrollToTopBtn.classList.remove('show');
+                }
+            });
+            scrollToTopBtn.addEventListener('click', function () {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    <script>
         document.getElementById('loadMoreBento').addEventListener('click', function () {
             document.getElementById('bento-reverse').style.display = "grid";
-            this.style.display = "none"; // hide the button after click
+            this.style.display = "none"; 
         });
     </script>
 
