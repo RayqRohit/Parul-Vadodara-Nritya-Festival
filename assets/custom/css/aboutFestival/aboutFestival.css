@@ -93,6 +93,11 @@
     margin-bottom: 1rem;
     line-height: 1.75;
     font-family: var(--font-poppins, 'Poppins', sans-serif);
+
+}
+
+.festival-desc-content {
+    text-align: justify !important;
 }
 
 .festival-desc-content b {
@@ -288,4 +293,24 @@
         right: 20px;
         font-size: 16px;
     }
+}
+
+/* new one */
+
+.festival-lead {
+    padding: 0;
+    background: none;
+    font-family: var(--font-poppins);
+    font-weight: 100;
+}
+
+.about-festival-row {
+    padding-inline: 0;
+}
+
+
+/* another new */
+
+.about-festival-section {
+    background: #f8f9fa;
 }
