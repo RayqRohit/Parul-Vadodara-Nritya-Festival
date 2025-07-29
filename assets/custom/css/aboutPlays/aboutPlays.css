@@ -747,3 +747,88 @@
     box-shadow: 0 0 0 3px rgba(58, 134, 255, 0.3);
     outline: none;
 }
+
+/* new card queries */
+
+/* ===== RESPONSIVE PLAYS GRID ===== */
+.plays-grid-container {
+    display: grid;
+    gap: 2rem;
+    width: 100%;
+}
+
+/* Mobile: 1 column */
+.plays-grid-container {
+    grid-template-columns: 1fr;
+}
+
+/* Tablet: 2 columns */
+@media (min-width: 768px) {
+    .plays-grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+/* Medium screens (992px - 1190px): 2 columns */
+@media (min-width: 992px) and (max-width: 1190px) {
+    .plays-grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+/* Large screens (1191px+): 3 columns */
+@media (min-width: 1191px) {
+    .plays-grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        grid-auto-flow: dense;
+    }
+
+    /* Make some cards span differently for variety */
+    .play-card-item:nth-child(8) {
+        grid-column: 2 / 4;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .festival-small-desc {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .play-card-item:nth-child(8) .bg-body-tertiary {
+        width: 40% !important;
+        margin: 0 !important;
+    }
+
+    .play-card-item:nth-child(8) .my-2 {
+        flex: 1;
+        text-align: left;
+        padding-left: 2rem;
+    }
+}
+
+/* Extra large screens: 4 columns (optional) */
+@media (min-width: 1400px) {
+    .plays-grid-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        justify-items: center;
+    }
+}
+
+/* Individual card styling */
+.play-card-item {
+    width: 100%;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    position: relative;
+}
+
+.play-card-item:hover {
+    transform: scale(1.02);
+}
