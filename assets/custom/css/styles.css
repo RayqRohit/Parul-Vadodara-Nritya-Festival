@@ -304,7 +304,6 @@ nav {
 
 /* video banner new thing */
 
-/* Multiple background layers for smooth crossfade */
 .video-banner::before {
     content: "";
     position: absolute;
