@@ -862,12 +862,17 @@ nav {
     letter-spacing: 1px;
 }
 
-.message-from {
+.message-highlight {
     color: #fff;
     /* display: block; */
 }
 
-.message-highlight {
+/* .message-highlight {
+    color: transparent;
+    -webkit-text-stroke: 0.2px white;
+    text-stroke: 0.8px #ffffff;
+} */
+.message-from {
     color: transparent;
     -webkit-text-stroke: 0.2px white;
     text-stroke: 0.8px #ffffff;
