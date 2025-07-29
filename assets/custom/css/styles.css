@@ -170,15 +170,15 @@ nav {
 
 .video-banner {
     width: 100%;
+    width: 100%;
     min-height: 50vw;
     max-height: 95vh;
     position: relative;
-    background: url("../../images/46791.jpg") center/cover no-repeat;
-    background-color: #1b1b1b;
     display: flex;
     align-items: center;
     justify-content: center;
     padding-top: 50px;
+    overflow: hidden;
 }
 
 .video-banner::after {
@@ -296,6 +296,70 @@ nav {
     -webkit-text-stroke: 0.2px white;
     text-stroke: 0.8px #ffffff;
     text-transform: uppercase;
+}
+
+.video-banner {
+    transition: background-image 1s ease-in-out;
+}
+
+/* video banner new thing */
+
+/* Multiple background layers for smooth crossfade */
+.video-banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("../../images/46791.jpg") center/cover no-repeat;
+    animation: fadeSlider 14s infinite;
+    z-index: 0;
+}
+
+@keyframes fadeSlider {
+
+    0%,
+    18% {
+        background-image: url("../../images/46791.jpg");
+        opacity: 1;
+    }
+
+    20%,
+    38% {
+        background-image: url("../../images/intro-1743175237.jpg");
+        opacity: 1;
+    }
+
+    40%,
+    58% {
+        background-image: url("../../images/pu-bg-img.jpg");
+        opacity: 1;
+    }
+
+    60%,
+    78% {
+        background-image: url("../../images/bg-img.jpg");
+        opacity: 1;
+    }
+
+    80%,
+    100% {
+        background-image: url("../../images/Screenshot\ 2025-05-26\ 151211.png");
+        opacity: 1;
+    }
+}
+
+/* Dark overlay */
+.video-banner::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+/* Content positioning */
+.video-banner>* {
+    position: relative;
+    z-index: 2;
 }
 
 /* countdown section */
