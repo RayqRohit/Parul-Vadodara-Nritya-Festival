@@ -62,10 +62,17 @@ section[id] {
     --font-prompt: 'Prompt', 'Inter', sans-serif;
 }
 
+html,
 body {
-    font-family: var(--font-poppins);
     overflow-x: hidden;
 }
+
+body {
+    font-family: var(--font-poppins);
+
+}
+
+
 
 /* utilities section */
 
