@@ -510,7 +510,7 @@ body.navbar-open {
   }
 
   #festivalGalleryCarousel .carousel-item img {
-    height: 280px;
+    /* height: 280px; */
   }
 }
 

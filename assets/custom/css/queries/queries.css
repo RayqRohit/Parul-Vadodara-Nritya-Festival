@@ -17,8 +17,8 @@
 }
 
 .hero-overlay {
-    /* background: linear-gradient(115deg, #191924d2 70%, #15151b 100%); */
-    /* z-index: 2; */
+      background: linear-gradient(90deg, rgba(28, 30, 42, 0.6) 0%, rgba(38, 41, 62, 0.5) 100%);
+    z-index: 1;
 }
 
 .text-shadow {
@@ -379,3 +379,5 @@
         padding-block: 5px;
     }
 }
+
+
