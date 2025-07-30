@@ -324,7 +324,7 @@ nav {
 
     0%,
     18% {
-        background-image: url("../../images/slider/slide-5.png");
+        background-image: url("../../images/slider/slide-1.png");
         opacity: 1;
     }
 
@@ -348,7 +348,7 @@ nav {
 
     80%,
     100% {
-        background-image: url("../../images/slider/slide-1.png");
+        background-image: url("../../images/slider/slide-5.png");
         opacity: 1;
     }
 }
