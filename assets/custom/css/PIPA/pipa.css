@@ -461,6 +461,11 @@
     --theme-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
 }
 
+.bachelor-hons-theme {
+    --theme-color: #ffe066;
+    --theme-gradient: linear-gradient(135deg, #f7971e 0%, #ffd200 100%);
+}
+
 .master-theme {
     --theme-color: #43e97b;
     --theme-gradient: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
