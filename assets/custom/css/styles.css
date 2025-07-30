@@ -325,31 +325,31 @@ nav {
     0%,
     18% {
         /* background-image: url("../../images/slider/slide-1.png"); */
-        background-image: url("../../images/Screenshot\ 2025-05-26\ 151211.png");
+        background-image: url("../../images/slider/slide-1.png");
         opacity: 1;
     }
 
     20%,
     38% {
-        background-image: url("../../images/pu-bg-img.jpg");
+        background-image: url("../../images/slider/slide-2.png");
         opacity: 1;
     }
 
     40%,
     58% {
-        background-image: url("../../images/intro-1743175237.jpg");
+        background-image: url("../../images/slider/slide-3.png");
         opacity: 1;
     }
 
     60%,
     78% {
-        background-image: url("../../images/bg-img.jpg");
+        background-image: url("../../images/slider/slide-4.png");
         opacity: 1;
     }
 
     80%,
     100% {
-        background-image: url("../../images/intro-1743175237.jpg");
+        background-image: url("../../images/slider/slide-5.png");
         opacity: 1;
     }
 }
