@@ -234,13 +234,13 @@ nav {
     line-height: 1;
     /* letter-spacing: -8px; */
 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); */
     margin-bottom: 1.5rem;
 }
 
 .hero-title-highlight {
     color: #ffe066;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
 }
 
 /* Hero Description */
