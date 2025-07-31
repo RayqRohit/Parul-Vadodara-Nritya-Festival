@@ -350,6 +350,10 @@
     font-size: 0.95rem;
     text-align: left;
   }
+
+    .about-university-section{
+    min-height: auto;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -392,6 +396,10 @@
 
   .about-university-section {
     padding: 60px 0;
+  }
+
+  .about-university-section{
+    min-height: auto;
   }
 }
 
