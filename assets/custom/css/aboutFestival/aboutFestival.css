@@ -314,3 +314,100 @@
 .about-festival-section {
     background: #f8f9fa;
 }
+
+
+/* new side loadmore button */
+
+/* Load More Button Styles */
+.load-more-btn {
+    background: linear-gradient(135deg, #e5334b 0%, #c42d42 100%);
+    border: none;
+    padding: 12px 28px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(229, 51, 75, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.load-more-btn:hover {
+    background: linear-gradient(135deg, #c42d42 0%, #a02236 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(229, 51, 75, 0.4);
+    color: white;
+}
+
+.load-more-btn:active {
+    transform: translateY(0);
+}
+
+.load-more-btn .btn-text {
+    transition: all 0.3s ease;
+}
+
+.load-more-btn.loading .btn-text {
+    opacity: 0.7;
+}
+
+/* Additional Bento Grid */
+.bento-additional {
+    margin-top: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease;
+}
+
+.bento-additional.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive layout for 5 additional images */
+@media (min-width: 992px) {
+    .bento-additional {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 220px);
+    }
+    
+    .bento-additional .item-9 {
+        grid-column: 1 / 2;
+        grid-row: 1/2;
+    }
+    
+    .bento-additional .item-10 {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+    
+    .bento-additional .item-11 {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+    }
+    
+    .bento-additional .item-12 {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    
+    .bento-additional .item-13 {
+        grid-column: 2 / 4;
+        grid-row: 2 / 3;
+    }
+
+  .item-11 img{
+    object-position: top;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+    .bento-additional {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .bento-additional .item-13 {
+        grid-column: 1 / 3;
+    }
+}
