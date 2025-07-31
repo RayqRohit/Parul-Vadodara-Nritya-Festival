@@ -1,3 +1,84 @@
+(function () {
+    'use strict';
+
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initBannerPreloader);
+    } else {
+        initBannerPreloader();
+    }
+
+    function initBannerPreloader() {
+        const banner = document.querySelector('.video-banner');
+        if (!banner) return;
+
+ 
+        const imagePaths = [
+            'assets/images/slider/slide-1.png',
+            'assets/images/slider/slide-2.png',
+            'assets/images/slider/slide-3.png',
+            'assets/images/slider/slide-4.png',
+            'assets/images/slider/slide-5.png'
+        ];
+
+        let loadedCount = 0;
+        const totalImages = imagePaths.length;
+        const imagePromises = [];
+
+
+        banner.style.opacity = '0';
+        banner.style.background = '#003e6d';
+        // banner.innerHTML = '<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 18px; z-index: 999;">Loading Festival Images...</div>' + banner.innerHTML;
+
+        imagePaths.forEach((path, index) => {
+            const promise = new Promise((resolve, reject) => {
+                const img = new Image();
+
+                img.onload = () => {
+                    loadedCount++;
+                    console.log(`✓ Loaded: ${path} (${loadedCount}/${totalImages})`);
+                    resolve(path);
+                };
+
+                img.onerror = () => {
+                    loadedCount++;
+                    console.warn(`✗ Failed to load: ${path}`);
+                    resolve(path);
+                };
+
+         
+                img.src = path;
+            });
+
+            imagePromises.push(promise);
+        });
+
+
+        Promise.all(imagePromises).then(() => {
+            console.log('🎉 All banner images preloaded!');
+
+            // Remove loading text
+            // const loadingText = banner.querySelector('div[style*="Loading Festival Images"]');
+            // if (loadingText) {
+            //     loadingText.remove();
+            // }
+
+          
+            banner.style.background = '';
+            banner.style.opacity = '1';
+            banner.classList.add('images-ready');
+
+       n
+            setTimeout(() => {
+                banner.classList.add('start-animation');
+            }, 100);
+        });
+    }
+})();
+
+
+
+
 document.addEventListener('DOMContentLoaded', function () {
     const navbar = document.querySelector('.navbar');
     window.addEventListener('scroll', function () {

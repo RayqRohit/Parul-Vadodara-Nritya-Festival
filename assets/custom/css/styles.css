@@ -320,11 +320,88 @@ nav {
     z-index: 0;
 }
 
-@keyframes fadeSlider {
+/* @keyframes fadeSlider {
 
     0%,
     18% {
-        /* background-image: url("../../images/slider/slide-1.png"); */
+        background-image: url("../../images/slider/slide-1.png");
+        opacity: 1;
+    }
+
+    20%,
+    38% {
+        background-image: url("../../images/slider/slide-2.png");
+        opacity: 1;
+    }
+
+    40%,
+    58% {
+        background-image: url("../../images/slider/slide-3.png");
+        opacity: 1;
+    }
+
+    60%,
+    78% {
+        background-image: url("../../images/slider/slide-4.png");
+        opacity: 1;
+    }
+
+    80%,
+    100% {
+        background-image: url("../../images/slider/slide-5.png");
+        opacity: 1;
+    }
+} */
+
+/* Dark overlay */
+.video-banner::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+/* Content positioning */
+.video-banner>* {
+    position: relative;
+    z-index: 2;
+}
+
+
+.video-banner {
+    width: 100%;
+    min-height: 50vw;
+    max-height: 95vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    overflow: hidden;
+    background: url("../../images/slider/slide-1.png") center/cover no-repeat;
+}
+
+.video-banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("../../images/slider/slide-1.png") center/cover no-repeat;
+    z-index: 0;
+    opacity: 0;
+    /* Delay animation start by 2 seconds to allow loading */
+    animation: fadeSlider 14s infinite 2s;
+}
+
+/* Add fade-in at the beginning of animation */
+@keyframes fadeSlider {
+    0% {
+        background-image: url("../../images/slider/slide-1.png");
+        opacity: 0;
+    }
+
+    2%,
+    18% {
         background-image: url("../../images/slider/slide-1.png");
         opacity: 1;
     }
@@ -354,7 +431,7 @@ nav {
     }
 }
 
-/* Dark overlay */
+/* Keep existing overlay and content styles */
 .video-banner::after {
     content: "";
     position: absolute;
@@ -363,11 +440,11 @@ nav {
     z-index: 1;
 }
 
-/* Content positioning */
 .video-banner>* {
     position: relative;
     z-index: 2;
 }
+
 
 /* countdown section */
 
