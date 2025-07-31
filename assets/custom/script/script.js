@@ -58,10 +58,10 @@
             console.log('🎉 All banner images preloaded!');
 
             // Remove loading text
-            // const loadingText = banner.querySelector('div[style*="Loading Festival Images"]');
-            // if (loadingText) {
-            //     loadingText.remove();
-            // }
+            const loadingText = banner.querySelector('div[style*="Loading Festival Images"]');
+            if (loadingText) {
+                loadingText.remove();
+            }
 
           
             banner.style.background = '';
