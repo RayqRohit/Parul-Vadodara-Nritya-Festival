@@ -226,6 +226,35 @@
     width: 100%;
 }
 
+.new-contact-link{
+     color: #2e225b;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    position: relative;
+    display: inline-block;
+}
+
+.new-contact-link:hover {
+    color: #d8a800;
+    transform: translateX(3px);
+}
+
+.new-contact-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #ffc107;
+    transition: width 0.3s ease;
+}
+
+.new-contact-link:hover::after {
+    width: 75%;
+}
+
 .contact-address {
     color: #4d4062;
     line-height: 1.6;
@@ -313,7 +342,8 @@
     }
 
     .contact-link,
-    .contact-address {
+    .contact-address,
+    .new-contact-link {
         font-size: 0.9rem;
     }
 }
