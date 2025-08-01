@@ -9,11 +9,12 @@
 
 .about-pipa-hero-bg {
     object-fit: cover;
+    object-position: 80% center;
     width: 100%;
     height: 100%;
-    filter: brightness(0.60) blur(1.5px);
     z-index: 1;
     pointer-events: none;
+    filter: brightness(0.60) blur(1.5px);
 }
 
 .display-4 {
@@ -653,11 +654,10 @@
     object-fit: contain;
     filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
 
-    
+
 }
 
 
-.pipa-title-icon{
+.pipa-title-icon {
     display: none;
 }
-
